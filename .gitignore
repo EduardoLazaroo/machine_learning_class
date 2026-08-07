@@ -51,22 +51,8 @@ Thumbs.db
 tmp/
 *.tmp
 
-# ------------------------------------------------------------------------------
-# CONTROLE DE LIBERAÇÃO SEMANAL DE AULAS (UNIVEM)
-# ------------------------------------------------------------------------------
-# As pastas abaixo estão ignoradas para liberar o conteúdo aos alunos gradualmente.
-# Para liberar a aula da semana:
-# 1. Comente ou remova a linha da aula (ex: altere '/aula02/' para '# /aula02/').
-# 2. No terminal, execute:
-#    git add .
-#    git commit -m "feat: libera conteudo da aula XX"
-#    git push
-# ------------------------------------------------------------------------------
-
 # Aula 01 - LIBERADA ✅
 # /aula01/
-
-# Aulas Futuras (Bloqueadas temporariamente) 🔒
 /aula02/
 /aula03/
 /aula04/
