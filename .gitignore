@@ -1,0 +1,88 @@
+# ==============================================================================
+# .gitignore - Disciplina: Aprendizado de Máquina e Redes Neurais (UNIVEM)
+# Professor: Eduardo Lázaro Roesler de Oliveira
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Arquivos Temporários, Compilados e Cache do Python / Jupyter
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook & Checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Ambientes Virtuais
+venv/
+.venv/
+env/
+ENV/
+
+# Configurações de IDEs e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs e Dados Temporários
+*.log
+tmp/
+*.tmp
+
+# ------------------------------------------------------------------------------
+# CONTROLE DE LIBERAÇÃO SEMANAL DE AULAS (UNIVEM)
+# ------------------------------------------------------------------------------
+# As pastas abaixo estão ignoradas para liberar o conteúdo aos alunos gradualmente.
+# Para liberar a aula da semana:
+# 1. Comente ou remova a linha da aula (ex: altere '/aula02/' para '# /aula02/').
+# 2. No terminal, execute:
+#    git add .
+#    git commit -m "feat: libera conteudo da aula XX"
+#    git push
+# ------------------------------------------------------------------------------
+
+# Aula 01 - LIBERADA ✅
+# /aula01/
+
+# Aulas Futuras (Bloqueadas temporariamente) 🔒
+/aula02/
+/aula03/
+/aula04/
+/aula05/
+/aula06/
+/aula07/
+/aula08/
+/aula09/
+/aula10/
+/aula11/
+/aula12/
+/aula13/
+/aula14/
+/aula15/
+/aula16/
+/aula17/
+/aula18/
+/aula19/
+/aula20/
