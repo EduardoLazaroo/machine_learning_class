@@ -7,9 +7,9 @@
 ---
 
 > [!NOTE]
-> 🔙 **De onde viemos:** Esta é a aula inaugural! Iniciamos nossa jornada conectando o conhecimento prévio dos alunos sobre computação tradicional com a revolução impulsionada por dados.
-> 🎯 **Objetivo Principal da Aula:** Compreender a evolução da IA, diferenciar Inteligência Artificial, Machine Learning e Deep Learning, dominar os 3 tipos de aprendizado e executar o primeiro script Python no Google Colab.
-> 🚀 **Para onde vamos:** Na próxima aula ('Python para Ciência de Dados - Parte 1'), iniciaremos a computação vetorial com NumPy para manipular matrizes e vetores numéricos.
+> 🔙 **De onde viemos:** Esta é a nossa aula inaugural! Iniciamos nossa jornada conectando o conhecimento prévio dos alunos sobre programação tradicional (onde nós escrevemos regras `if/else` explícitas) com a revolução do Aprendizado de Máquina (onde fornecemos dados históricos para a máquina descobrir as regras sozinha).
+> 🎯 **Objetivo Principal da Aula:** Compreender o ecossistema da Inteligência Artificial, diferenciar IA vs. Machine Learning vs. Deep Learning, dominar os 3 paradigmas de aprendizado (Supervisionado, Não Supervisionado e por Reforço) e executar o primeiro pipeline preditivo com Python e Scikit-Learn no Google Colab.
+> 🚀 **Para onde vamos:** Na próxima aula ('Python para Ciência de Dados - Parte 1'), daremos o primeiro passo técnico: como computadores processam listas e matrizes gigantes de números em milissegundos usando a biblioteca **NumPy** e computação vetorial.
 
 ---
 
@@ -404,6 +404,17 @@ codigo_previsto = modelo_knn_estudante.predict(minhas_medidas_flor)[0]
 especie_descoberta = dados_iris.target_names[codigo_previsto]
 print(f"🌻 A sua flor personalizada foi classificada como: ---> {especie_descoberta.upper()} <---")
 ```
+
+---
+
+### 🔮 Aquecimento & Spoiler da Próxima Aula (Para Ir Além)
+
+> [!TIP]
+> 🧠 **Conceito-Semente — Por que listas normais do Python não aguentam Ciência de Dados?**  
+> Na programação comum, você aprendeu a usar listas (`[10, 20, 30]`). Mas imagine tentar somar 2 em cada elemento de uma lista de 1 milhão de números: o Python tradicional precisaria de um laço `for` lento e pesado. Na **Aula 02**, conheceremos o **NumPy**, a biblioteca que faz operações matemáticas em matrizes inteiras de uma só vez (processamento vetorizado em C), tornando cálculos de IA até 100x mais rápidos!
+> 
+> 🚀 **Desafio Proativo de Autoestudo (Opcional):**  
+> Tente abrir o Google Colab e executar: `import numpy as np; arr = np.array([10, 20, 30]); print(arr * 2)`. Observe como ele multiplicou todos os números sem usar nenhum laço `for`!
 
 ---
 

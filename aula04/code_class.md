@@ -7,9 +7,9 @@
 ---
 
 > [!NOTE]
-> 🔙 **De onde viemos:** Na Aula 03, aprendemos a navegar e explorar tabelas com a biblioteca Pandas.
-> 🎯 **Objetivo Principal da Aula:** Identificar e realizar os primeiros tratamentos de falhas comuns em tabelas reais: valores ausentes `NaN`, duplicatas e valores muito distantes do restante dos dados (*outliers*).
-> 🚀 **Para onde vamos:** Na próxima aula ('Preparação e Tratamento de Dados - Parte 2'), concluiremos o pré-processamento aplicando Normalização, Padronização e Encoders Categóricos.
+> 🔙 **De onde viemos:** Na Aula 03, aprendemos a manipular, filtrar e agrupar tabelas com Pandas. No entanto, nenhum dado da vida real vem perfeito: nos deparamos com buracos, cadastros duplicados e números absurdos que distorcem as médias.
+> 🎯 **Objetivo Principal da Aula:** Diagnosticar e tratar falhas de integridade em tabelas com Pandas: identificar e preencher valores ausentes (`NaN` com média/mediana), remover linhas duplicadas e detectar valores aberrantes (*outliers*) usando a regra do Intervalo Interquartil (IQR).
+> 🚀 **Para onde vamos:** Na próxima aula ('Preparação e Tratamento de Dados - Parte 2'), resolveremos o próximo obstáculo: a nossa tabela está limpa, mas ainda contém colunas de texto ('Masculino', 'São Paulo', 'Ouro') que os modelos matemáticos não conseguem calcular, além de colunas com escalas de tamanho totalmente desproporcionais.
 
 ---
 
@@ -306,6 +306,17 @@ tabela_sem_hacker = tabela_placar_games[tabela_placar_games['pontos'] <= limite_
 print(f"--- PLACAR HIGIENIZADO SEM HACKERS (Fator IQR = {fator_multiplicador_iqr}) ---")
 print(tabela_sem_hacker)
 ```
+
+---
+
+### 🔮 Aquecimento & Spoiler da Próxima Aula (Para Ir Além)
+
+> [!TIP]
+> 🧠 **Conceito-Semente — Como somar 'São Paulo' com R$ 10.000?**  
+> Os algoritmos de Machine Learning são equações matemáticas. Eles não sabem o que é a palavra 'Feminino' ou a categoria 'Premium'. Na **Aula 05**, aprenderemos **Encoding** (como transformar palavras em códigos binários $0$ e $1$) e **Scaling** (como colocar uma coluna de Salário de R$ 50.000 e uma coluna de Idade de 20 anos na mesma régua para que o salário não engula a idade).
+> 
+> 🚀 **Desafio Proativo de Autoestudo (Opcional):**  
+> Se você tem as categorias `Bronze`, `Prata` e `Ouro`, faz sentido transformá-las em `1, 2, 3`? E se as categorias fossem `Carro`, `Moto`, `Caminhão`, transformar em `1, 2, 3` seria justo ou criaria uma ordem inventada? Reflita sobre isso!
 
 ---
 

@@ -7,9 +7,9 @@
 ---
 
 > [!NOTE]
-> 🔙 **De onde viemos:** Retomamos os aprendizados de 'Visualização de Dados', onde aprendemos a extrair insights e identificar tendências visuais nos dados.
-> 🎯 **Objetivo Principal da Aula:** Apresentar os fundamentos do Aprendizado Supervisionado, construir o primeiro pipeline completo de Machine Learning usando Scikit-Learn e dominar a Regressão Linear Simples.
-> 🚀 **Para onde vamos:** Na próxima aula ('Aprendizado Supervisionado - Parte 2'), avançaremos da previsão de números contínuos para a classificação categórica (Regressão Logística e KNN).
+> 🔙 **De onde viemos:** Na Aula 06, aprendemos a explorar e visualizar graficamente as relações lineares entre variáveis. Agora que conseguimos enxergar que quando a metragem de uma casa sobe o preço também tende a subir, é hora de ensinar a máquina a traçar a melhor reta preditiva possível.
+> 🎯 **Objetivo Principal da Aula:** Compreender o paradigma do **Aprendizado Supervisionado**, formalizar a separação entre variáveis explicativas ($X$) e a variável alvo ($y$), dominar a divisão de **Treino e Teste (`train_test_split`)**, treinar o modelo de **Regressão Linear** (`fit`/`predict`) e avaliar o erro com métricas reais ($R^2$ e MAE).
+> 🚀 **Para onde vamos:** Na próxima aula ('Aprendizado Supervisionado - Parte 2'), enfrentaremos um novo tipo de problema: e quando a resposta que queremos prever não for um número contínuo (como R$ 500.000), mas uma decisão categórica de **SIM ou NÃO** (como 'Aprovar Empréstimo', 'Cliente Caloteiro' ou 'Transação Fraudulenta')?
 
 ---
 
@@ -346,6 +346,17 @@ print(f"--- RELATÓRIO DO SEU CARRO PERSONALIZADO ---")
 print(f"🚗 Peso Informado: {peso_veiculo_toneladas} toneladas ({peso_veiculo_toneladas * 1000:.0f} kg)")
 print(f"⛽ Consumo Estimado pela IA: ---> {consumo_estimado_kml:.2f} km/l <---")
 ```
+
+---
+
+### 🔮 Aquecimento & Spoiler da Próxima Aula (Para Ir Além)
+
+> [!TIP]
+> 🧠 **Conceito-Semente — Por que uma reta infinita falha para perguntas de 'Sim ou Não'?**  
+> Se tentarmos traçar uma reta para prever se um paciente está doente ($1$) ou saudável ($0$), a reta pode prever valores absurdos como $1.8$ ou $-0.4$. Na **Aula 08**, conheceremos a **Regressão Logística** (que usa a elegante curva Sigmoide para espremer as saídas entre $0\%$ e $100\%$) e o intuitivo algoritmo **KNN** (*'Diga-me com quem andas e te direi quem és'*).
+> 
+> 🚀 **Desafio Proativo de Autoestudo (Opcional):**  
+> Se um sistema de IA de um hospital disser que um paciente tem 51% de chance de ter uma doença grave, você o mandaria para casa ou pediria exames extras? Reflita sobre como o limiar de decisão (*threshold*) impacta a vida real!
 
 ---
 

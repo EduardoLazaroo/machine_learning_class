@@ -7,9 +7,9 @@
 ---
 
 > [!NOTE]
-> 🔙 **De onde viemos:** Na Aula 01, compreendemos o panorama global da Inteligência Artificial e executamos nosso primeiro script no Google Colab.
-> 🎯 **Objetivo Principal da Aula:** Dar os primeiros passos com a biblioteca **NumPy**, usando arrays para organizar e calcular dados numéricos em Machine Learning.
-> 🚀 **Para onde vamos:** Na próxima aula ('Python para Ciência de Dados - Parte 2'), avançaremos para o **Pandas**, aprendendo a manipular estruturas de dados tabulares (DataFrames).
+> 🔙 **De onde viemos:** Na Aula 01, compreendemos o que é Machine Learning e vimos que os algoritmos aprendem a partir de dados numéricos. Mas para que um modelo processe milhares de registros sem travar o computador, precisamos de uma estrutura de dados muito mais rápida do que as listas comuns do Python.
+> 🎯 **Objetivo Principal da Aula:** Dominar a biblioteca **NumPy** e a estrutura `ndarray`, compreendendo operações vetorizadas, indexação/slicing multidimensional, broadcasting e manipulação matricial básica.
+> 🚀 **Para onde vamos:** Na próxima aula ('Python para Ciência de Dados - Parte 2'), adicionaremos 'etiquetas e cabeçalhos' a essas matrizes numéricas, aprendendo a manipular tabelas completas com a biblioteca **Pandas**.
 
 ---
 
@@ -345,6 +345,17 @@ print("--- SEU TIME DE RPG APÓS A POÇÃO MÁGICA ---")
 print(time_herois_bufado)
 print(f"\n📊 Média de Inteligência do seu time bufado: {np.mean(time_herois_bufado[:, 2]):.1f}")
 ```
+
+---
+
+### 🔮 Aquecimento & Spoiler da Próxima Aula (Para Ir Além)
+
+> [!TIP]
+> 🧠 **Conceito-Semente — Matrizes são rápidas, mas cadê o nome das colunas?**  
+> Uma matriz NumPy é incrível para cálculo matemático puro, mas no mundo real os dados vêm com nomes: *Nome*, *Idade*, *Salário*, *Cidade*. Na **Aula 03**, conheceremos o **Pandas** e sua estrutura principal, o **DataFrame** — que funciona como uma super planilha inteligente do Excel turbinada por código Python, permitindo filtros complexos, agrupamentos e consultas em milissegundos!
+> 
+> 🚀 **Desafio Proativo de Autoestudo (Opcional):**  
+> Pesquise no Google ou execute no Colab: `import pandas as pd; df = pd.DataFrame({'Nome': ['Ana', 'Bruno'], 'Idade': [22, 28]}); print(df.head())`. Veja a diferença visual entre uma matriz NumPy e uma tabela Pandas!
 
 ---
 

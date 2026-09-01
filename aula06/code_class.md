@@ -7,9 +7,9 @@
 ---
 
 > [!NOTE]
-> 🔙 **De onde viemos:** Na Aula 05, concluímos o pré-processamento de dados aplicando Normalização, Padronização e Encoders Categóricos.
-> 🎯 **Objetivo Principal da Aula:** Dominar a **Análise Exploratória Visual de Dados (EDA)** utilizando **Matplotlib** e **Seaborn** para identificar padrões, distribuições e matrizes de correlação.
-> 🚀 **Para onde vamos:** Na próxima aula ('Aprendizado Supervisionado - Parte 1'), utilizaremos todo este conhecimento para construir o nosso primeiro modelo de Machine Learning (Regressão Linear).
+> 🔙 **De onde viemos:** Nas Aulas 04 e 05, deixamos nossos dados perfeitamente limpos, encodados e padronizados. Mas antes de gastar tempo treinando modelos complexos, precisamos entender o comportamento das variáveis, suas distribuições e como elas se correlacionam.
+> 🎯 **Objetivo Principal da Aula:** Dominar as principais técnicas de **Visualização de Dados e Análise Exploratória (EDA)** com **Matplotlib** e **Seaborn**, construindo Histogramas, Boxplots, Scatter Plots com diferenciação de classes (`hue`) e Mapas de Calor de Correlação de Pearson (`heatmap`).
+> 🚀 **Para onde vamos:** Na próxima aula ('Aprendizado Supervisionado - Parte 1'), daremos o grande salto da disciplina: encerraremos a fase de apenas 'olhar para o passado' e treinaremos nosso **primeiro modelo de Machine Learning (Regressão Linear)**, aprendendo a dividir os dados entre o material de estudo (**Treino**) e o dia da prova (**Teste**).
 
 ---
 
@@ -325,6 +325,17 @@ sns.heatmap(matriz_correlacao, annot=True, cmap=paleta_cores_escolhida, fmt='.2f
 plt.title(f"Mapa de Calor de Estatísticas de Jogadores (Paleta: {paleta_cores_escolhida})", fontweight='bold')
 plt.show()
 ```
+
+---
+
+### 🔮 Aquecimento & Spoiler da Próxima Aula (Para Ir Além)
+
+> [!TIP]
+> 🧠 **Conceito-Semente — A Divisão Sagrada: Treino ($X_{train}$) vs. Teste ($X_{test}$)**  
+> Imagine que um professor dê aos alunos exatamente as mesmas 10 questões da prova durante a aula de revisão. Se o aluno tirar 10, ele realmente aprendeu a matéria ou só decorou o gabarito? Na **Aula 07**, entraremos no mundo de Machine Learning e aprenderemos por que sempre escondemos 20% a 30% dos nossos dados (Conjunto de Teste) para avaliar se o nosso algoritmo realmente aprendeu a generalizar ou se apenas decorou os dados de treino (*Overfitting*)!
+> 
+> 🚀 **Desafio Proativo de Autoestudo (Opcional):**  
+> Pense em uma reta matemática da escola: $y = ax + b$. Como você usaria essa reta simples para prever o preço de uma casa ($y$) sabendo apenas o tamanho dela em metros quadrados ($x$)? Reflita sobre isso!
 
 ---
 

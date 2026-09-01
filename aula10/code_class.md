@@ -7,9 +7,9 @@
 ---
 
 > [!NOTE]
-> 🔙 **De onde viemos:** Na Aula 09, aprendemos algoritmos avançados como Árvores de Decisão, Random Forest e SVM.
-> 🎯 **Objetivo Principal da Aula:** Dominar a **Validação Cruzada (K-Fold e Stratified K-Fold)**, plotar a **Curva ROC**, calcular o **AUC (Area Under Curve)** e ajustar o **Limiar de Decisão (Threshold)**.
-> 🚀 **Para onde vamos:** Na próxima aula ('Avaliação de Modelos - Parte 2'), utilizaremos estas métricas avançadas para otimizar hiperparâmetros automaticamente via GridSearchCV e RandomizedSearchCV.
+> 🔙 **De onde viemos:** Na Aula 09, conhecemos algoritmos de alta capacidade como Árvores de Decisão, Random Forest e SVM. Mas modelos poderosos podem facilmente nos iludir com boas notas causadas por sorte na amostragem ou por desbalanceamento severo de classes.
+> 🎯 **Objetivo Principal da Aula:** Blindar a avaliação de modelos com técnicas estatísticas robustas: aplicar **Validação Cruzada (K-Fold e Stratified K-Fold)**, analisar o trade-off entre sensibilidade e especificidade com a **Curva ROC**, calcular a métrica **AUC (Area Under Curve)** e compreender o ajuste fino do limiar de probabilidade.
+> 🚀 **Para onde vamos:** Na próxima aula ('Avaliação de Modelos - Parte 2'), usaremos essas métricas robustas para resolver outro grande desafio: como encontrar automaticamente a melhor combinação de hiperparâmetros (número de árvores, profundidade, penalidades) sem precisar chutar na mão?
 
 ---
 
@@ -322,6 +322,17 @@ print(f"--- RESULTADO DA SUA VALIDAÇÃO CRUZADA ({quantidade_dobras_k}-FOLD) --
 print(f"Pontuações AUC nas {quantidade_dobras_k} dobras: {pontuacoes_auc_dobras.round(4)}")
 print(f"📊 Pontuação AUC Média Final: {pontuacoes_auc_dobras.mean():.4f} ± {pontuacoes_auc_dobras.std():.4f}")
 ```
+
+---
+
+### 🔮 Aquecimento & Spoiler da Próxima Aula (Para Ir Além)
+
+> [!TIP]
+> 🧠 **Conceito-Semente — O Robô que Afina o Seu Modelo (GridSearchCV)**  
+> Uma Random Forest tem dezenas de 'botões' reguláveis: `n_estimators`, `max_depth`, `min_samples_split`. Ficar mudando um por um no código e esperando o resultado é cansativo e ineficiente. Na **Aula 11**, aprenderemos o **GridSearchCV** e o **RandomizedSearchCV**: entregamos uma lista de opções e o Python testa todas as combinações automaticamente, nos devolvendo o modelo campeão configurado!
+> 
+> 🚀 **Desafio Proativo de Autoestudo (Opcional):**  
+> Se você tiver 3 opções para o botão A, 4 opções para o botão B e rodar um K-Fold com 5 folds, quantos modelos o computador terá que treinar no total? Faça a conta de multiplicação ($3 \times 4 \times 5$)!
 
 ---
 

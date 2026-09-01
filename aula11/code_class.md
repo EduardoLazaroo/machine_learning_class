@@ -7,9 +7,9 @@
 ---
 
 > [!NOTE]
-> 🔙 **De onde viemos:** Na Aula 10, aprendemos a avaliar a robustez de modelos usando Validação Cruzada K-Fold e Curvas ROC/AUC.
-> 🎯 **Objetivo Principal da Aula:** Otimizar automaticamente os botões de ajuste de um algoritmo de ML utilizando **GridSearchCV** e **RandomizedSearchCV**, além de aplicar **Regularização (Ridge & Lasso)**.
-> 🚀 **Para onde vamos:** Na próxima aula ('Aprendizado Não Supervisionado - Parte 1'), encerraremos o módulo supervisionado e iniciaremos o estudo de Clustering com o algoritmo **K-Means**.
+> 🔙 **De onde viemos:** Na Aula 10, aprendemos a mensurar a performance real dos modelos sem viés usando Validação Cruzada e Curvas ROC/AUC. Agora precisamos automatizar o processo de sintonia fina desses modelos para extrair o máximo de desempenho com o menor risco de sobreajuste.
+> 🎯 **Objetivo Principal da Aula:** Automatizar a otimização de hiperparâmetros com **GridSearchCV** e **RandomizedSearchCV**, e aplicar técnicas de **Regularização (Lasso L1 e Ridge L2)** para penalizar a complexidade desnecessária e simplificar modelos preditivos.
+> 🚀 **Para onde vamos:** Na próxima aula ('Aprendizado Não Supervisionado - Parte 1'), mudaremos radicalmente de paradigma: entraremos no mundo onde **NÃO EXISTEM RESPOSTAS CERTAS ($y$)** e aprenderemos como a máquina descobre grupos e personas de clientes sozinha com o algoritmo **K-Means**.
 
 ---
 
@@ -316,6 +316,17 @@ print(f"🔧 Melhores Parâmetros Vencedores: {busca_grid_estudante.best_params_
 acuracia_teste_final = accuracy_score(respostas_teste, busca_grid_estudante.best_estimator_.predict(matriz_teste))
 print(f"📊 Acurácia Final no Teste: {acuracia_teste_final * 100:.2f}%")
 ```
+
+---
+
+### 🔮 Aquecimento & Spoiler da Próxima Aula (Para Ir Além)
+
+> [!TIP]
+> 🧠 **Conceito-Semente — Como aprender quando não há gabarito ($y$)?**  
+> Até hoje, sempre demos o gabarito para a máquina: *'aqui estão os dados e esta casa custa R$ 500k'* ou *'este cliente é inadimplente'*. Mas imagine que uma loja tem 50.000 clientes e quer dividi-los em 3 perfis de consumo sem saber de antemão quem é quem. Na **Aula 12**, iniciaremos o **Aprendizado Não Supervisionado** com o **K-Means**, onde a máquina agrupa os pontos por proximidade espacial!
+> 
+> 🚀 **Desafio Proativo de Autoestudo (Opcional):**  
+> Como você decidiria matematicamente se uma base de clientes deve ser dividida em 3, 4 ou 5 grupos? Pense em como medir se os grupos formados ficaram 'juntinhos' ou 'espalhados'.
 
 ---
 

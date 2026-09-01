@@ -7,9 +7,9 @@
 ---
 
 > [!NOTE]
-> 🔙 **De onde viemos:** Na Aula 04, aprendemos a limpar dados eliminando valores nulos, duplicatas e outliers.
-> 🎯 **Objetivo Principal da Aula:** Transformar atributos categóricos em numéricos (**One-Hot / Label Encoding**) e padronizar/escalar variáveis numéricas (**StandardScaler / MinMaxScaler**) para modelos de ML.
-> 🚀 **Para onde vamos:** Na próxima aula ('Visualização de Dados'), utilizaremos os dados transformados para construir gráficos explicativos complexos com Matplotlib e Seaborn.
+> 🔙 **De onde viemos:** Na Aula 04, limpamos os dados eliminando valores nulos, registros duplicados e outliers. Porém, algoritmos de Machine Learning operam estritamente sobre matrizes numéricas homogêneas: eles são incapazes de realizar operações matemáticas sobre textos (como cidades ou categorias) e sofrem distorções severas quando uma coluna está em milhares (Salário) e outra em unidades (Idade).
+> 🎯 **Objetivo Principal da Aula:** Dominar a transformação de dados categóricos em numéricos (**Mapeamento Ordinal** e **One-Hot Encoding**) e reescalar atributos contínuos para a mesma faixa de grandeza (**StandardScaler** e **MinMaxScaler**).
+> 🚀 **Para onde vamos:** Na próxima aula ('Visualização de Dados'), utilizaremos todo o nosso conjunto de dados já limpo e transformado para gerar gráficos reveladores com **Matplotlib & Seaborn**, identificando correlações ocultas e padrões visuais antes de criarmos nosso primeiro modelo preditivo.
 
 ---
 
@@ -293,6 +293,17 @@ tabela_escalada_final = pd.DataFrame(matriz_dados_escalados, columns=['forca_esc
 print("--- DADOS APÓS SEU ESCALONAMENTO PERSONALIZADO ---")
 print(tabela_escalada_final.round(3))
 ```
+
+---
+
+### 🔮 Aquecimento & Spoiler da Próxima Aula (Para Ir Além)
+
+> [!TIP]
+> 🧠 **Conceito-Semente — O poder de enxergar antes de prever**  
+> Olhar para uma tabela com 50 colunas e 10.000 linhas numéricas é cansativo e confuso para o cérebro humano. Na **Aula 06**, aprenderemos a transformar tabelas em gráficos profissionais com **Matplotlib e Seaborn**: veremos como um *Heatmap* de correlação nos mostra em 2 segundos quais variáveis andam juntas e como um *Scatter Plot* revela agrupamentos naturais.
+> 
+> 🚀 **Desafio Proativo de Autoestudo (Opcional):**  
+> No Google Colab, importe `import seaborn as sns; sns.get_dataset_names()` para ver dezenas de bases gratuitas que já vêm prontas para você explorar graficamente na próxima aula!
 
 ---
 

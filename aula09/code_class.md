@@ -7,9 +7,9 @@
 ---
 
 > [!NOTE]
-> 🔙 **De onde viemos:** Na Aula 08, aprendemos os algoritmos de Classificação Regressão Logística e KNN, além da Matriz de Confusão.
-> 🎯 **Objetivo Principal da Aula:** Dominar **Árvores de Decisão**, **Random Forest** (Ensemble) e **SVM (Support Vector Machines)**, compreendendo **Fronteiras de Decisão**, **Importância de Atributos** e a prevenção ao **Overfitting**.
-> 🚀 **Para onde vamos:** Na próxima aula ('Avaliação de Modelos - Parte 1'), avançaremos para técnicas avançadas de avaliação como Validação Cruzada K-Fold e Curvas ROC/AUC.
+> 🔙 **De onde viemos:** Na Aula 08, aprendemos a classificar dados com Regressão Logística e KNN. Porém, quando os dados possuem regras condicionais complexas e atributos de tipos variados, precisamos de modelos que consigam criar divisões não-lineares intuitivas e transparentes.
+> 🎯 **Objetivo Principal da Aula:** Dominar os algoritmos de **Árvores de Decisão**, o poder do ensemble com **Random Forest (Floresta Aleatória)** e as **Support Vector Machines (SVM)**, compreendendo o cálculo de impureza de Gini, a extração de importância de atributos (`feature_importances_`) e o controle de profundidade para conter o *Overfitting*.
+> 🚀 **Para onde vamos:** Na próxima aula ('Avaliação de Modelos - Parte 1'), colocaremos à prova a confiabilidade dos nossos modelos: como garantir que a acurácia de 90% obtida pela Random Forest não foi apenas 'pura sorte' na divisão aleatória do `train_test_split`?
 
 ---
 
@@ -414,6 +414,17 @@ print(f"--- RELATÓRIO DO SEU TESTE (Random Forest com {quantidade_arvores_flore
 print("Importância dos Atributos Calculada pela sua Floresta:")
 print(importancia.sort_values(ascending=False).round(4))
 ```
+
+---
+
+### 🔮 Aquecimento & Spoiler da Próxima Aula (Para Ir Além)
+
+> [!TIP]
+> 🧠 **Conceito-Semente — E se o seu modelo teve apenas 'sorte' no teste?**  
+> Se você separar 20% para teste com a semente `42`, seu modelo pode tirar 90% de acurácia; mas se mudar a semente para `10`, pode cair para 70%. Em qual nota acreditar? Na **Aula 10**, aprenderemos a **Validação Cruzada (K-Fold)**: dividimos os dados em 5 ou 10 blocos e fazemos o modelo passar por todas as provas possíveis, obtendo uma média estatisticamente blindada!
+> 
+> 🚀 **Desafio Proativo de Autoestudo (Opcional):**  
+> Pesquise o que significa a sigla **ROC / AUC** em Machine Learning. Dica: é uma das métricas mais exigidas em entrevistas de emprego na área de dados!
 
 ---
 

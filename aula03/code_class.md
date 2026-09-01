@@ -7,9 +7,9 @@
 ---
 
 > [!NOTE]
-> 🔙 **De onde viemos:** Na Aula 02, aprendemos a manipular matrizes numéricas com o NumPy.
-> 🎯 **Objetivo Principal da Aula:** Dar os primeiros passos com o **Pandas** para criar, explorar, filtrar e resumir tabelas de dados (*DataFrames*).
-> 🚀 **Para onde vamos:** Na próxima aula ('Preparação e Tratamento de Dados - Parte 1'), aprenderemos a diagnosticar e tratar problemas reais em tabelas, como valores nulos e duplicatas.
+> 🔙 **De onde viemos:** Na Aula 02, aprendemos a fazer operações matemáticas ultrarrápidas em matrizes numéricas com o NumPy. Agora precisamos dar contexto a esses números trabalhando com tabelas estruturadas do mundo real.
+> 🎯 **Objetivo Principal da Aula:** Dominar a biblioteca **Pandas**, explorando DataFrames e Series, aplicando técnicas de inspeção estatística (`describe`, `info`), seleção por rótulo/posição (`loc`/`iloc`), filtros condicionais e agregações por categoria (`groupby`).
+> 🚀 **Para onde vamos:** Na próxima aula ('Preparação e Tratamento de Dados - Parte 1'), enfrentaremos a dura realidade: tabelas do mundo real chegam incompletas, com dados ausentes (`NaN`), duplicatas e erros grosseiros que precisamos limpar antes de qualquer análise.
 
 ---
 
@@ -310,6 +310,17 @@ filtro_personalizado = (tabela_loja_geek['categoria'] == categoria_escolhida) & 
 print(f"--- PRODUTOS DA CATEGORIA '{categoria_escolhida}' ATÉ R$ {valor_preco_maximo:.2f} ---")
 print(tabela_loja_geek[filtro_personalizado])
 ```
+
+---
+
+### 🔮 Aquecimento & Spoiler da Próxima Aula (Para Ir Além)
+
+> [!TIP]
+> 🧠 **Conceito-Semente — O Princípio 'Garbage In, Garbage Out' (GIGO)**  
+> Se alimentarmos um algoritmo com dados corrompidos ou cheios de buracos, a previsão dele será um desastre. Na **Aula 04**, assumiremos o papel de 'faxineiros de dados': aprenderemos como encontrar linhas vazias (`np.nan`), como decidir entre deletar uma linha ou preenchê-la com a média/mediana, e como caçar valores absurdos (*outliers*).
+> 
+> 🚀 **Desafio Proativo de Autoestudo (Opcional):**  
+> Se uma tabela de 1.000 clientes tiver 5 salários em branco, é melhor deletar essas 5 pessoas da base ou preencher o salário delas com a média da empresa? Pense sobre o impacto de cada decisão e anote para debatermos na próxima aula!
 
 ---
 

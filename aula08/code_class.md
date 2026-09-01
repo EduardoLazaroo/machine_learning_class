@@ -7,9 +7,9 @@
 ---
 
 > [!NOTE]
-> 🔙 **De onde viemos:** Na Aula 07, iniciamos o Aprendizado Supervisionado aprendendo a prever números contínuos com a Regressão Linear.
-> 🎯 **Objetivo Principal da Aula:** Dominar os algoritmos de **Classificação** (**Regressão Logística** e **K-Nearest Neighbors / KNN**) e interpretar a **Matriz de Confusão** e métricas de desempenho.
-> 🚀 **Para onde vamos:** Na próxima aula ('Aprendizado Supervisionado - Parte 3'), avançaremos para algoritmos baseados em árvores (**Árvores de Decisão & Random Forest**).
+> 🔙 **De onde viemos:** Na Aula 07, aprendemos a prever números contínuos com a Regressão Linear. Mas a grande maioria das decisões de negócio envolve escolher entre classes: aprovar ou recusar, doente ou saudável, spam ou não-spam.
+> 🎯 **Objetivo Principal da Aula:** Dominar os fundamentos da **Classificação Supervisionada**, treinando e comparando dois algoritmos clássicos (**Regressão Logística** e **K-Nearest Neighbors / KNN**), e interpretando o desempenho real do modelo através da **Matriz de Confusão** e das métricas de **Acurácia, Precisão, Recall e F1-Score**.
+> 🚀 **Para onde vamos:** Na próxima aula ('Aprendizado Supervisionado - Parte 3'), descobriremos o que fazer quando as regras de decisão forem mais complexas do que retas ou vizinhanças: aprenderemos como a máquina constrói fluxogramas automáticos usando **Árvores de Decisão**, e como juntar centenas delas em uma **Random Forest**.
 
 ---
 
@@ -339,6 +339,17 @@ print(f"📊 Acurácia nos Dados de Teste: {acuracia_personalizada * 100:.2f}%")
 print("\nMatriz de Confusão:")
 print(confusion_matrix(vetor_respostas_teste, previsoes_personalizadas))
 ```
+
+---
+
+### 🔮 Aquecimento & Spoiler da Próxima Aula (Para Ir Além)
+
+> [!TIP]
+> 🧠 **Conceito-Semente — O Fluxograma Automático (Árvores de Decisão)**  
+> Pense em um médico atendendo um paciente: *'SE febre > 38.5º E tosse persistente ENTÃO prescreve medicamento'*. Na **Aula 09**, veremos que as **Árvores de Decisão** fazem exatamente isso sozinhas! Elas analisam a tabela e criam a árvore de perguntas ideal para classificar qualquer dado. E melhor: aprenderemos como juntar 100 árvores trabalhando em equipe (**Random Forest**) para que os erros individuais sejam anulados pela inteligência coletiva!
+> 
+> 🚀 **Desafio Proativo de Autoestudo (Opcional):**  
+> Se 10 médicos experientes derem sua opinião sobre um raio-X e votarem na maioria, a decisão tende a ser mais confiável do que a opinião de um único médico isolado? Essa é a base dos algoritmos de *Ensemble*!
 
 ---
 
