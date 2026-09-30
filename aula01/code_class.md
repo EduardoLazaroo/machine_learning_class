@@ -255,7 +255,9 @@ plt.show()
 > Trava o sorteio das linhas. Assim, todos os 45 alunos da sala de aula dividem os dados exatamente nas mesmas linhas, obtendo o mesmo resultado ao comparar os códigos.
 
 ```python
-# 1. Isolamos a matriz de entrada X (4 colunas de medidas) e o vetor de respostas y (espécies)
+# 1. Importamos a função de divisão de dados e isolamos as matrizes de entrada e resposta
+from sklearn.model_selection import train_test_split
+
 matriz_entradas = dados_brutos_iris.data
 vetor_respostas = dados_brutos_iris.target
 
